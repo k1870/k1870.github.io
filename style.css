@@ -1,0 +1,100 @@
+body {
+    background-color: black;
+}
+h1 {
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+}
+p {
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+}
+header {
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+nav {
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 20px;
+    
+}
+nav li {
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    display: inline-block;
+    
+}
+main {
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+}
+section {
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 20px;
+    
+}
+#intro {
+    /* padding-bottom: 200px; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 400px ;
+}
+#aboutMe {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+}
+
+#project-div {
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+}
+.project {
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 20px;
+    height: 300px;
+}
+#skills {
+    padding-bottom: 200px;
+}
+#skill-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+#experience {
+    padding-bottom: 200px
+}
+#contact {
+    padding-bottom: 200px;
+}
+form {
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 20px;
+    color: white;
+}
+footer {
+    border: 2px solid white;
+    border-radius: 10px;
+}
