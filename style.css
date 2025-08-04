@@ -31,9 +31,7 @@ h1 {
 }
 
 header {
-    border: 2px solid green;
     border-radius: 10px;
-    /* margin-bottom: 20px; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     position: fixed;
@@ -47,15 +45,14 @@ header {
     border: none;
     padding: 0;
     text-align: left;
+    margin-left: 40px;
+    color: #0cad11;
 }
 nav {
     text-align: right;
-    /* list-style-type: none; */
+
 }
 
-ul li {
-    /* list-style-type: none; */
-}
 
 
 nav li {
@@ -82,7 +79,6 @@ nav li:hover{
 
 
 main {
-    /* border: 2px solid white; */
     border-radius: 10px;
     margin-bottom: 20px;
     margin-top: 89px;
@@ -90,7 +86,6 @@ main {
 }
 
 #intro {
-    /* border: 2px solid blue; */
     display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -127,7 +122,6 @@ main {
   font-size: 18px;
   line-height: 1.6;
   color: white; 
-  /* margin: 0; */
 }
 
 #contactbtn {
@@ -137,7 +131,6 @@ main {
   border: 2px solid #3e824b;
   color: #3e824b;
   border-radius: 4px;
-  /* transition: background 0.3s ease, color 0.3s ease; */
   width: 20%;
   transition: transform 0.2s ease-in-out;
 }
@@ -166,7 +159,6 @@ main {
     margin-bottom: 210px;
 }
 #about h1 {
-    /* border: 2px solid blue; */
     font-size: 40px;
     margin-bottom: 0;
 
@@ -177,7 +169,6 @@ main {
   display: flex;
   gap: 40px;
   align-items: flex-start;
-  /* border: 2px solid blue; */
 }
 
 .about-content p {
@@ -191,12 +182,10 @@ main {
   width: 300px;
   height: auto;
   border-radius: 8px;
-  /* border: 2px solid blue; */
 }
 
 #about ul{
     color: white;
-    /* border: 2px solid blue; */
     width: 50%;
       margin-top: 0;
 
@@ -220,8 +209,6 @@ main {
   background-color: #2c6b2e;
   padding: 30px;
   border-radius: 20px;
-  /* max-width: 800px; */
-  /* width: 90%; */
 }
 
 /* Each skill block */
@@ -328,29 +315,73 @@ section #experience {
 }
 
 #contact {
-    /* padding-bottom: 10px; */
     margin: 20px 120px;
-    border: 2px solid green;
-    /* justify-content: center;
-    align-items: center; */
-}
-form {
-    border: 2px solid white;
-    border-radius: 10px;
-    margin: 100px auto;
+    margin-bottom: 130px;
+    text-align: center;
     color: white;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    padding: 20px;
-    width: 400px;
-    
 }
-footer {
-    /* border: 2px solid green; */
-    /* border-radius: 10px; */
-    display: grid;
 
-    
+#contact h1 {
+  font-size: 36px;
+  margin-bottom: 40px;
+
+}
+
+form {
+  background-color: transparent;
+  border: 2px solid green;
+  border-radius: 12px;
+  padding: 20px;
+  /* width: 100%; */
+  max-width: 350px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+form label {
+  font-weight: bold;
+  color: #ccc;
+  text-align: left;
+}
+
+form input,
+form textarea {
+  background-color: #111;
+  border: 1px solid darkslategrey;
+  color: #fff;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: green;
+}
+
+form button {
+  background: transparent;
+  border: 2px solid  #0cad11;
+  color:  #0cad11;
+  padding: 12px;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background-color: #00ff80;
+  color: #000;
+}
+
+footer {
+    display: grid;   
 }
 h5 {
     color: white;
