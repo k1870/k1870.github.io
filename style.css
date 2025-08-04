@@ -1,27 +1,44 @@
 body {
     background-color: black;
 }
+/* * {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+/* } */
+/* body, html {
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+    /* height: 100%;
+    overflow: hidden;
+    background: black; */
+  /* } */
+
+  /* #meteorCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none; */
+    /* }  */
 h1 {
     color: white;
-    border: 2px solid green;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 20px;
+    /* border: 2px solid green; */
+    /* border-radius: 10px; */
+    /* padding: 10px; */
+    /* margin: 20px; */
 }
-h2 {
-    color: white;
-    border: 2px solid green;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 1px 20px;
-}
-p {
+
+/* p {
     color: white;
     border: 2px solid green;
     border-radius: 10px;
     padding: 10px;
     margin: 20px;
-}
+} */
 header {
     border: 2px solid green;
     border-radius: 10px;
@@ -42,11 +59,11 @@ header {
 }
 nav {
     text-align: right;
-    list-style-type: none;
+    /* list-style-type: none; */
 }
 
 ul li {
-    list-style-type: none;
+    /* list-style-type: none; */
 }
 
 
@@ -90,26 +107,89 @@ main {
 
 }
 section {
-    border: 2px solid white;
-    border-radius: 10px;
-    margin: 20px;
+    /* border: 2px solid white; */
+    /* border-radius: 10px; */
+    /* margin: 20px; */
     
 }
 #intro {
-    /* padding-bottom: 200px; */
-    display: grid;
-    border: 2px solid green;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    height: 420px ;
-    margin: 20px 120px;    
+    /* border: 2px solid blue; */
+    display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  /* height: 100vh; Full screen hero */
+  /* padding: 0 0px; */
+  margin: 0 140px;
+  margin-bottom: 210px;
+  /* gap: 20px; */
+  /* background-color: #0a192f; */
 }
+
+#intro h1 {
+  font-size: 20px;
+  color: #3e824b;
+  margin-top: 60px;
+}
+
+#introName {
+
+  font-size: 64px;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
+
+#introSubheading {
+  font-size: 64px;
+  font-weight: bold;
+  color: #3e824b;
+  margin: 0;
+}
+
+#intro p {
+  max-width: 500px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: white; 
+  /* margin: 0; */
+}
+
+#contactbtn {
+  margin-top: 50px;
+  padding: 12px 24px;
+  background: transparent;
+  border: 2px solid #3e824b;
+  color: #3e824b;
+  border-radius: 4px;
+  transition: background 0.3s ease, color 0.3s ease;
+  width: 20%;
+}
+
+#contactbtn a {
+  text-decoration: none;
+  font-weight: bold;
+  color: inherit;
+}
+
+#contactbtn:hover {
+  background-color: rgba(45, 218, 11, 0.1);
+}
+
+
+#intro strong {
+    color: rgb(50, 50, 50);
+}
+
 button {
-    border: 2px solid white;
+    /* border: 2px solid white;
     border-radius: 7px;
     background-color: green;
-    width: 360px;
+    width: 300px;
     height: 84px;
-    margin: 20px;
+    margin: 20px; */
+
+
     /* grid-column: 1; */
     /* grid-row: 2; */
     /* justify-self: center; */
@@ -159,25 +239,33 @@ button {
     border: 2px solid green;
 }
 #contact {
-    padding-bottom: 200px;
+    /* padding-bottom: 10px; */
     margin: 20px 120px;
     border: 2px solid green;
+    /* justify-content: center;
+    align-items: center; */
 }
 form {
     border: 2px solid white;
     border-radius: 10px;
-    margin: 20px;
+    margin: 100px auto;
     color: white;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding: 20px;
+    width: 400px;
+    
 }
 footer {
     border: 2px solid green;
     border-radius: 10px;
-    display: block;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+
+    
 }
 h5 {
     color: white;
+    margin: 20px auto;
     
 
 }
