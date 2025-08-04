@@ -196,12 +196,50 @@ button {
     /* align-self: center; */
     
 }
-#aboutMe {
-    display: grid;
-    border: 2px solid green;
-    grid-template-rows: 1fr 4fr;
-    height: 450px ;
-    margin: 20px 120px;
+#about {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* border: 2px solid green; */
+    /* grid-template-rows: 1fr 4fr; */
+    /* height: 450px ; */
+    margin: 0 180px;
+    margin-bottom: 210px;
+}
+#about h1 {
+    /* border: 2px solid blue; */
+    font-size: 40px;
+    margin-bottom: 0;
+
+}
+
+
+.about-content {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  /* border: 2px solid blue; */
+}
+
+.about-content p {
+  width: 60%;
+  line-height: 1.6;
+  color: white;
+
+}
+
+.about-content img {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  /* border: 2px solid blue; */
+}
+
+#about ul{
+    color: white;
+    /* border: 2px solid blue; */
+    width: 50%;
+      margin-top: 0;
+
 }
 #skills {
     padding-bottom: 200px;
