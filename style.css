@@ -407,3 +407,135 @@ h5 {
     
 
 }
+
+/* For devices between 320px and 430px width */
+@media screen and (max-width: 430px) and (min-width: 320px) {
+
+  header {
+    display: none;
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  #logo {
+    display: ;
+    margin-left: 20px;
+    margin-top: 10px;
+    transform: rotate(0deg);
+    text-align: center;
+  }
+
+  nav {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  nav li {
+    display: block;
+    margin: 10px auto;
+    width: fit-content;
+  }
+
+  #intro {
+    margin: 0 20px;
+    margin-bottom: 120px;
+    align-items: center;
+    text-align: center;
+  }
+
+  #intro h1 {
+    margin-top: 40px;
+    font-size: 16px;
+  }
+
+  #introName, #introSubheading {
+    font-size: 32px;
+  }
+
+  #intro p {
+    font-size: 14px;
+    line-height: 1.4;
+    max-width: 100%;
+  }
+
+  #contactbtn {
+    width: 80%;
+  }
+
+  #about {
+    margin: 0 20px;
+    margin-bottom: 120px;
+  }
+
+  #about h1 {
+    font-size: 28px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-content p,
+  #about ul {
+    width: 100%;
+  }
+
+  .about-content img {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  #skills {
+    margin: 0 20px;
+    margin-bottom: 150px;
+  }
+
+  #skills h1 {
+    font-size: 24px;
+  }
+
+  #skills-wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    padding: 20px;
+    gap: 10px;
+  }
+
+  #projects {
+    margin: 0 20px;
+    margin-bottom: 120px;
+  }
+
+  .project-card {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  section #experience,
+  #contact {
+    margin: 0 20px;
+  }
+
+  #contact h1 {
+    font-size: 28px;
+  }
+
+  .myemail {
+    display: none; /* Hide rotated email for mobile */
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  form {
+    max-width: 100%;
+  }
+
+  h5 {
+    font-size: 14px;
+  }
+
+}
