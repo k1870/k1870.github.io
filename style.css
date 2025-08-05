@@ -1,6 +1,6 @@
 body {
     background-color: black;
-      /* font-family: 'Orbitron', sans-serif; */
+      /* font-family:  monospace; */
 
 }
 /* * {
@@ -39,14 +39,19 @@ header {
     top: 0;
     transition: top 0.3s ease;
     z-index: 999;
+    /* border: 2px solid blue; */
 
 }
 #logo {
-    border: none;
+    /* border: 2px solid blue; */
     padding: 0;
     text-align: left;
-    margin-left: 40px;
+    margin-left: 76px;
+    margin-top: 30px;
     color: #0cad11;
+    transform: rotate(90deg);
+    transform-origin: left top; /* Adjusts pivot point */
+    /* display: inline-block; */
 }
 nav {
     text-align: right;
@@ -75,6 +80,9 @@ nav li:hover{
 
 .navbar.hide {
   top: -100px; /* or -height of your navbar */
+}
+.resume {
+    background-color: green;
 }
 
 
@@ -378,6 +386,16 @@ form button {
 form button:hover {
   background-color: #00ff80;
   color: #000;
+}
+.myemail {
+    color: green;
+    font-size: 18px;
+    /* border: 2px solid blue; */
+    position: fixed;
+    margin-left: 46px;
+    top: 580px;
+    transform: rotate(-90deg);
+    transform-origin: left top;
 }
 
 footer {
