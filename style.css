@@ -175,6 +175,31 @@ main {
 
 }
 
+ #resumebtn {
+  display: none;
+    margin-top: 50px;
+    padding: 12px 24px;
+    background: transparent;
+    border: 2px solid #3e824b;
+    color: #3e824b;
+    border-radius: 4px;
+    width: 20%;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  #resumebtn a {
+    text-decoration: none;
+    font-weight: bold;
+    color: inherit;
+  }
+
+  #resumebtn:hover {
+    background-color: #3e824b;
+    color: black;
+    transform: scale(1.05);
+
+  }
+
 
 #intro strong {
     color: rgb(50, 50, 50);
@@ -481,6 +506,11 @@ h5 {
   #contactbtn {
     width: 80%;
   }
+  #resumebtn {
+   display: block;
+    margin: 40px auto; 
+    width: 80%;
+  }
 
   #about {
     margin: 0 20px;
@@ -613,6 +643,11 @@ h5 {
   #contactbtn {
     width: 80%;
   }
+  #resumebtn {
+    display: block;
+    width: 80%;
+  }
+
 
   #about {
     margin: 0 20px;

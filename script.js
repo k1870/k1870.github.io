@@ -75,7 +75,7 @@ function applySimpleTheme(theme) {
   const color = simpleThemeColors[theme];
 
   const colorElements = document.querySelectorAll(
-    '.project-label, .myemail, #logo, #introSubheading, #intro h1, #contactbtn, form button, nav li, .project-content, form, form input, form textarea'
+    '.project-label, .myemail, #logo, #introSubheading, #intro h1, #contactbtn, #resumebtn, form button, nav li, .project-content, form, form input, form textarea'
   );
 
   colorElements.forEach(el => {
@@ -101,6 +101,7 @@ function applySimpleTheme(theme) {
     }
 
     #contactbtn:hover,
+    #resumebtn:hover,
     form button:hover {
       background-color: ${color} !important;
       color: black !important;
