@@ -428,7 +428,7 @@ h5 {
 }
 
 /* For devices between 320px and 430px width */
-@media screen and (min-width: 320px) and (max-width: 430px)  {
+@media screen and (min-width: 320px) and (max-width: 744px)  {
 
   header {
     display: none;
@@ -558,7 +558,7 @@ h5 {
 
 }
 
-@media screen and (min-width: 400px) and (max-width: 800px)  and (orientation: landscape) {
+@media screen and (min-width: 360px) and (max-width: 926px)  and (orientation: landscape) {
 
   header {
     display: none;
