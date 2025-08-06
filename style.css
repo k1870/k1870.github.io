@@ -3,29 +3,34 @@ body {
       /* font-family:  monospace;git  */
 
 }
-/* * {
-  margin: 0;
-  padding: 0;
-  /* box-sizing: border-box; */
-/* } */
-/* body, html {
-    margin: 0;
-    padding: 0;
-    /* overflow: hidden; */
-    /* height: 100%;
-    overflow: hidden;
-    background: black; */
-  /* } */
-
-  /* #meteorCanvas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
-    pointer-events: none; */
-    /* }  */
+  #matrixCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  display: block;
+  pointer-events: none;
+}
+#rainCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+#meteorCanvas {
+  position: fixed; /* stays fixed in background */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
 h1 {
     color: white;
 }
@@ -33,7 +38,7 @@ h1 {
 header {
     border-radius: 10px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 2fr;
     position: fixed;
     width: 98.5%;
     top: 0;
@@ -53,6 +58,20 @@ header {
     transform-origin: left top; /* Adjusts pivot point */
     /* display: inline-block; */
 }
+#btn-matrix,
+ #btn-meteor,
+  #btn-rain  {
+  color: transparent;
+  border: none;
+  margin: 35px 0;
+  opacity: 0.6;
+}
+#btn-matrix:hover,
+ #btn-meteor:hover,
+  #btn-rain:hover  {
+  opacity: 1;
+}
+
 nav {
     text-align: right;
 
@@ -409,7 +428,7 @@ h5 {
 }
 
 /* For devices between 320px and 430px width */
-@media screen and (max-width: 430px) and (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 430px)  {
 
   header {
     display: none;
@@ -418,7 +437,136 @@ h5 {
   }
 
   #logo {
-    display: ;
+    margin-left: 20px;
+    margin-top: 10px;
+    transform: rotate(0deg);
+    text-align: center;
+  }
+
+  nav {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  nav li {
+    display: block;
+    margin: 10px auto;
+    width: fit-content;
+  }
+
+  #intro {
+    margin: 0 20px;
+    margin-bottom: 120px;
+    align-items: center;
+    text-align: center;
+  }
+
+  #intro h1 {
+    margin-top: 40px;
+    font-size: 16px;
+  }
+
+  #introName, #introSubheading {
+    font-size: 32px;
+  }
+
+  #intro p {
+    font-size: 14px;
+    line-height: 1.4;
+    max-width: 100%;
+  }
+
+  #contactbtn {
+    width: 80%;
+  }
+
+  #about {
+    margin: 0 20px;
+    margin-bottom: 120px;
+  }
+
+  #about h1 {
+    font-size: 28px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-content p,
+  #about ul {
+    width: 100%;
+  }
+
+  .about-content img {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  #skills {
+    margin: 0 20px;
+    margin-bottom: 150px;
+  }
+
+  #skills h1 {
+    font-size: 24px;
+  }
+
+  #skills-wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    padding: 20px;
+    gap: 10px;
+  }
+
+  #projects {
+    margin: 0 20px;
+    margin-bottom: 120px;
+  }
+
+  .project-card {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  section #experience,
+  #contact {
+    margin: 0 20px;
+  }
+
+  #contact h1 {
+    font-size: 28px;
+  }
+
+  .myemail {
+    display: none; /* Hide rotated email for mobile */
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  form {
+    max-width: 100%;
+  }
+
+  h5 {
+    font-size: 14px;
+  }
+
+}
+
+@media screen and (min-width: 400px) and (max-width: 800px)  and (orientation: landscape) {
+
+  header {
+    display: none;
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  #logo {
     margin-left: 20px;
     margin-top: 10px;
     transform: rotate(0deg);
