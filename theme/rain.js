@@ -24,7 +24,7 @@ export function initRain(canvasId) {
       y: Math.random() * -canvas.height,
       length: Math.random() * 15 + 10,
       speed: Math.random() * 6 + 4,
-      width: Math.random() * 0.8 + 0.3
+      width: Math.random() * 0.8 + 0.8
     });
   }
 

@@ -42,7 +42,7 @@ export function initMeteor(canvasId) {
         meteor.x - meteor.length * Math.cos(meteor.angle),
         meteor.y - meteor.length * Math.sin(meteor.angle)
       );
-      ctx.strokeStyle = `rgba(255, 100, 0, ${meteor.alpha})`;
+      ctx.strokeStyle = `rgba(255, 60, 0, ${meteor.alpha})`;
       ctx.lineWidth = 2;
       ctx.stroke();
 

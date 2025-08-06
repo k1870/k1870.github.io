@@ -47,15 +47,67 @@ function startTheme(initFunction, canvasId) {
 // Button event listeners
 document.getElementById('btn-matrix').addEventListener('click', () => {
   startTheme(initMatrixRain, 'matrixCanvas');
+  applySimpleTheme('matrix');
+  localStorage.setItem('selectedTheme', 'matrix');
 });
 
 document.getElementById('btn-meteor').addEventListener('click', () => {
   startTheme(initMeteor, 'meteorCanvas');
+  applySimpleTheme('meteor');
+  localStorage.setItem('selectedTheme', 'meteor');
 });
 
 document.getElementById('btn-rain').addEventListener('click', () => {
   startTheme(initRain, 'rainCanvas');
+  applySimpleTheme('rain');
 });
 
-// Default theme on page load
+
+// Simple theme colors
+const simpleThemeColors = {
+  matrix: "green",
+  meteor: "rgba(255, 60, 0, 1)",
+  rain: "rgba(0, 150, 255, 0.6)"
+};
+
+// Apply color styling
+function applySimpleTheme(theme) {
+  const color = simpleThemeColors[theme];
+
+  const colorElements = document.querySelectorAll(
+    '.project-label, .myemail, #logo, #introSubheading, #intro h1, #contactbtn, form button, nav li, .project-content, form, form input, form textarea'
+  );
+
+  colorElements.forEach(el => {
+    el.style.color = color;
+    el.style.borderColor = color;
+  });
+
+  const bgElements = document.querySelectorAll('.resume, #skills-wrapper');
+  bgElements.forEach(el => {
+    el.style.backgroundColor = color;
+  });
+
+  let style = document.getElementById("dynamic-theme-style");
+  if (!style) {
+    style = document.createElement("style");
+    style.id = "dynamic-theme-style";
+    document.head.appendChild(style);
+  }
+
+  style.textContent = `
+    nav li:hover {
+      background-color: ${color} !important;
+    }
+
+    #contactbtn:hover,
+    form button:hover {
+      background-color: ${color} !important;
+      color: black !important;
+    }
+  `;
+}
+
+//  Always start with matrix on page load
 startTheme(initMatrixRain, 'matrixCanvas');
+applySimpleTheme('matrix');
