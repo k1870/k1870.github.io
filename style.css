@@ -38,7 +38,7 @@ h1 {
 header {
     border-radius: 10px;
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-columns: 1fr  2fr;
     position: fixed;
     width: 98.5%;
     top: 0;
@@ -47,17 +47,7 @@ header {
     /* border: 2px solid blue; */
 
 }
-#logo {
-    /* border: 2px solid blue; */
-    padding: 0;
-    text-align: left;
-    margin-left: 76px;
-    margin-top: 30px;
-    color: #0cad11;
-    transform: rotate(90deg);
-    transform-origin: left top; /* Adjusts pivot point */
-    /* display: inline-block; */
-}
+
 #btn-matrix,
  #btn-meteor,
   #btn-rain  {
@@ -433,12 +423,12 @@ form button:hover {
 }
 .myemail {
     color: green;
-    font-size: 18px;
+    font-size: 24px;
     /* border: 2px solid blue; */
-    position: fixed;
-    margin-left: 46px;
+    /* position: fixed; */
+    /* margin-left: 46px; */
     top: 580px;
-    transform: rotate(-90deg);
+    /* transform: rotate(-90deg); */
     transform-origin: left top;
 }
 
