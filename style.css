@@ -563,7 +563,7 @@ h5 {
   }
 
   .myemail {
-    display: none; /* Hide rotated email for mobile */
+    /* display: none; Hide rotated email for mobile */
   }
 
   footer {
@@ -700,7 +700,7 @@ h5 {
   }
 
   .myemail {
-    display: none; /* Hide rotated email for mobile */
+    /* display: none; Hide rotated email for mobile */
   }
 
   footer {
