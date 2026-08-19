@@ -112,3 +112,85 @@ function applySimpleTheme(theme) {
 //  Always start with matrix on page load
 startTheme(initMatrixRain, 'matrixCanvas');
 applySimpleTheme('matrix');
+
+async function loadProjects() {
+  try {
+    const response = await fetch('./projects.json');
+
+    if (!response.ok) {
+      throw new Error(`Failed to load projects: ${response.status}`);
+    }
+
+    const projects = await response.json();
+    const projectsSection = document.getElementById('projects');
+
+    projects.forEach(project => {
+      const projectCard = document.createElement('div');
+      projectCard.classList.add('project-card');
+
+      const technologies = project.technologies
+        .map(technology => `<li>${technology}</li>`)
+        .join('');
+
+      const githubLink = project.github
+        ? `
+          <a href="${project.github}"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="${project.title} GitHub repository">
+            <img src="github-icon.svg" alt="GitHub" />
+          </a>
+        `
+        : '';
+
+      const liveLink = project.live
+        ? `
+          <a href="${project.live}"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="${project.title} live site">
+            <img src="external-link-icon.svg" alt="Live Site" />
+          </a>
+        `
+        : '';
+
+      projectCard.innerHTML = `
+        <div class="project-image">
+          <img
+            src="${project.image}"
+            alt="${project.title} project preview"
+            style="width: ${project.imageWidth};"
+          />
+        </div>
+
+        <div class="project-content">
+          <p class="project-label">${project.label}</p>
+
+          <h3 class="project-title">
+            ${project.title}
+          </h3>
+
+          <div class="project-description">
+            <p>${project.shortDescription || project.description || ''}</p>
+          </div>
+
+          <ul class="tech-stack">
+            ${technologies}
+          </ul>
+
+          <div class="project-links">
+            ${githubLink}
+            ${liveLink}
+          </div>
+        </div>
+      `;
+
+      projectsSection.appendChild(projectCard);
+    });
+
+  } catch (error) {
+    console.error('Unable to load projects:', error);
+  }
+}
+
+loadProjects();

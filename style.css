@@ -281,32 +281,67 @@ main {
   color: #ccd6f6;
   margin: 0 140px;
   margin-bottom: 200px;
+
+  display: flex;
+  flex-direction: column;
+
+  /* gap BETWEEN separate projects */
+  gap: 60px;
 }
+
 
 .project-card {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
+
+  /*
+    Image column only takes as much room
+    as the image actually needs.
+  */
+  grid-template-columns: auto minmax(0, 1fr);
+
+  /* gap BETWEEN image and information */
+  column-gap: 16px;
+
+  /* IMPORTANT:
+     image and information start at same height
+  */
+  align-items: start;
 }
+
+
+.project-image {
+  /* Don't force it to occupy half the page */
+  width: fit-content;
+
+  /* Don't centre it inside a large grid column */
+  margin: 0;
+
+  align-self: start;
+}
+
 
 .project-image img {
-    /* border: 2px solid red; */
-  width: 100%;
-  border-radius: 8px;
-  opacity: 0.85;
-  transition: 0.3s;
-}
-.project-image img:hover {
-  opacity: 1;
+  height: auto;
+
+  /* protects mobile layout */
+  max-width: 100%;
+
+  display: block;
 }
 
+
 .project-content {
-    border: 2px solid green;
+  border: 2px solid green;
   background-color: black;
+
   padding: 1.5rem;
   border-radius: 20px;
-  /* position: relative; */
+
   z-index: 2;
+
+  /* start at exact same top as image */
+  align-self: start;
+  max-width: 450px;
 }
 
 .project-label {

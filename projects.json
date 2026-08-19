@@ -1,0 +1,34 @@
+[
+  {
+    "id": "shopstack",
+    "title": "ShopStack",
+    "label": "Featured Project",
+    "shortDescription": "A full-stack e-commerce application.",
+    "image": "images/shopstack.png",
+    "imageWidth": "550px",
+    "technologies": [
+      "React",
+      "Node.js",
+      "Express",
+      "PostgreSQL"
+    ],
+    "github": "https://github.com/k1870/shopstack",
+    "live": ""
+  },
+
+  {
+    "id": "lost-v2",
+    "title": "Lost V2",
+    "label": "Featured Project",
+    "shortDescription": "A lightweight Android launcher.",
+    "image": "images/lost-v2.png",
+    "imageWidth": "300px",
+    "technologies": [
+      "Kotlin",
+      "Android",
+      "XML"
+    ],
+    "github": "",
+    "live": ""
+  }
+]
