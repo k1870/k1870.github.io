@@ -30,5 +30,24 @@
     ],
     "github": "https://github.com/k1870/lost_v2",
     "live": ""
-  }
+  },
+
+  {
+  "id": "Jamming",
+  "title": "Jamming",
+  "label": "Featured Project",
+  "shortDescription": "A React music playlist app using the YouTube Data API for live search and playlist building.",
+  "image": "images/jamming.png",
+  "imageWidth": "400px",
+  "technologies": [
+    "React",
+    "JavaScript",
+    "Vite",
+    "YouTube Data API",
+    "REST API",
+    "Local Storage",
+    "CSS"
+  ],
+   "github": "https://github.com/k1870/Jamming"
+}
 ]
